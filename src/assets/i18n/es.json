@@ -1,0 +1,264 @@
+{
+  "HOME": {
+    "TITLE": "Hola Angular con ngx-translate FR",
+    "TEXT": "Esta demostración ha sido creada usando ngx-translate",
+    "SELECT": "Seleccione el idioma"
+  },
+  "header": {
+    "home": "Casa",
+    "OurProperties": "Nuestras Propiedades",
+    "pro": "Propiedades",
+    "property": {
+      "subMenu1": "Comprar",
+      "subMenu2": "Alquiler",
+      "subMenu3": "Alquiler",
+      "subMenu4": "Menú",
+      "menu": {
+        "menu1": "Menú Uno",
+        "menu2": "Menú Dos",
+        "menu3": "Menú Tres"
+      }
+    },
+    "benefits": "Beneficios",
+    "about": "Sobre nosotros",
+    "howItWork": "Cómo funciona",
+    "contact": "Contacta con nosotros",
+    "setting": "Configuración",
+    "settingMenu": {
+      "reset": "Actualizar contraseña y correo electrónico",
+      "question": "Cuestionario",
+      "document": "Documentación",
+      "kyc": "KYC"
+    },
+    "wallet": "Billetera",
+    "logout": "Cerrar sesión",
+    "login": "Iniciar sesión",
+    "signup": "Regístrate",
+    "prototype": "Este prototipo de sitio web está actualmente en construcción."
+  },
+  "login": {
+    "title": "INICIAR SESIÓN",
+    "form": {
+      "label": "Correo electrónico",
+      "placeholder_email": "Dirección de correo electrónico",
+      "password": "Contraseña",
+      "placeholder_pass": "Contraseña",
+      "button": "REGISTRARSE"
+    },
+    "forgot_password": "¿Se te olvidó tu contraseña?",
+    "account1": "¿No tienes una cuenta?",
+    "account2": "Regístrate ahora",
+    "account3": "¿Ya registrado?",
+    "account4": "INICIAR SESIÓN"
+  },
+  "register": {
+    "title": "REGÍSTRATE",
+    "form": {
+      "label": "Correo electrónico",
+      "placeholder_email": "Dirección de correo electrónico",
+      "password": "Contraseña",
+      "placeholder_pass": "Contraseña",
+      "confirm_password": "Confirmar contraseña",
+      "placeholder_confirm": "Repite la contraseña",
+      "invitation": "código de invitación",
+      "button": "Registrarse"
+    },
+    "forgot_password": "¿Se te olvidó tu contraseña?",
+    "account1": "¿No tienes una cuenta?",
+    "account2": "Regístrate ahora"
+  },
+  "footer": {
+    "about": "ACERCA DE MERA INVEST",
+    "about_description": "MERA INVEST, tu innovadora plataforma inmobiliaria. Invierta digitalmente en proyectos inmobiliarios premium sin las barreras desventajosas del mercado de inversión clásico.",
+    "navi": "Navegación",
+    "navigation": {
+      "home": "Casa",
+      "buy": "Comprar",
+      "rent": "Alquilar",
+      "property": "Propiedades ",
+      "about": "Sobre nosotras",
+      "privacy": "Política de privacidad",
+      "contact": "Contacta con nosotras",
+      "terms": "Condiciones"
+    },
+    "follow_us": "SÍGUENOS",
+    "copyright": "Copyright © Todos los derechos reservados | , Inmobiliaria digital."
+  },
+  "reset_password": {
+    "header": "Seguridad",
+    "title": "Cambia la contraseña",
+    "text": "Elija una contraseña segura para alta seguridad.",
+    "form": {
+      "old_password": "Contraseña anterior",
+      "password": "Nueva contraseña",
+      "confirm_password": "Repita la nueva contraseña",
+      "button": "ACTUALIZAR AHORA"
+    }
+  },
+  "reset_email": {
+    "title": "Cambiar e-mail",
+    "text": "Configurar una nueva dirección de correo electrónico.",
+    "form": {
+      "current_email": "Dirección de email actual",
+      "password": "contraseña actual",
+      "new_email": "Nueva dirección de correo electrónico",
+      "button": "ACTUALIZAR AHORA"
+    }
+  },
+  "forgot_password": {
+    "title": "Se te olvidó tu contraseña",
+    "form": {
+      "label": "Correo electrónico",
+      "placeholder_email": "Dirección de correo electrónico",
+      "button": "Enviar"
+    },
+    "account1": "¿No tienes una cuenta?",
+    "account2": "Regístrate ahora"
+  },
+  "reset": {
+    "title": "RESTABLECER LA CONTRASEÑA",
+    "form": {
+      "password": "Contraseña",
+      "placeholder_pass": "Introducir la contraseña",
+      "confirm_password": "Confirmar contraseña",
+      "placeholder_confirm": "Repite la contraseña",
+      "button": "Restablecer la contraseña"
+    },
+    "account1": "¿No tienes una cuenta?",
+    "account2": "Regístrate ahora"
+  },
+  "home": {
+    "view": {
+      "label1": "Zona",
+      "label2": "Precio psf",
+      "label3": "Rentabilidad de alquiler",
+      "label4": "Objetivo de retorno",
+      "label5": "Min.Inversión",
+      "label6": "INVERSORAS",
+      "button": "Ver propiedad"
+    },
+    "trusted": "Socia de confianza en",
+    "trustedDesc": "Invertir en propiedades de lujo <br/> en magníficas <br/> ubicaciones",
+    "portfolio": "nuestro portafolio",
+    "portfolioDesc": "Selección única de propiedades",
+    "promoTitle": "¿Buscas algo diferente?",
+    "promoDesc": "Solicite nuestra oferta de inversión a medida",
+    "whyMera": {
+      "title": "Por qué MERA INVEST",
+      "subtitle": "Dirigido por especialistas en inversión inmobiliaria e inmobiliaria de confianza",
+      "list1Title": "Empresa de inversión de confianza",
+      "list1Desc": "Millones de personas confían en MERA INVEST",
+      "list2Title": "Inversión en <br> segura y de bajo riesgo",
+      "list2Desc": "Inversión de bajo riesgo en bienes raíces",
+      "list3Title": "Inversión <br> altamente rentable",
+      "list3Desc": "Obtenga el mayor retorno de la inversión con inversiones inmobiliarias globales",
+      "list4Title": "Proceso de <br> de inversión simple",
+      "list4Desc": "La inversión en bienes raíces globales es fácil, en solo unos pocos pasos",
+      "list5Title": "Propiedades asombrosas <br> ubicaciones",
+      "list5Desc": "Propiedades premium de alto valor escogidas con cereza, a nivel mundial.",
+      "list6Title": "Las mejores propiedades en el mercado",
+      "list6Desc": "Opciones de inversión para las mejores propiedades en el mercado global"
+    },
+    "founderQuote": "En MERA INVEST estamos enfocados <br/> en proporcionar a nuestros clientes, una selección única <br/> curada de las mejores propiedades del mercado.",
+    "founderDesig": "Cofundador y Director",
+    "adboxTitle": "Con MERA INVEST",
+    "adboxDesc": "Invertir en propiedades inmobiliarias de lujo",
+    "adboxSubhead": "Nunca ha sido más fácil",
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "subtitle": "Creemos que <br/> Invertir en propiedades inmobiliarias <br/> puede ser <br/> simple",
+      "desc": "Estás a solo unos pasos de encontrar la casa de tus sueños o una inversión rentable.",
+      "step1": "Paso 1",
+      "step1Title": "Regístrese en nuestro sitio. ¡Tarda menos de 5 minutos!",
+      "step1Desc": "Fácil registro",
+      "step2": "Paso 2",
+      "step2Title": "Busque en nuestra base de datos y encuentre su propiedad",
+      "step2Desc": "Un gran grupo de propiedades premium",
+      "step3": "Paso 3",
+      "step3Title": "Invierta en propiedades a través de nuestro sitio",
+      "step3Desc": "¡Inversión en propiedades inmobiliarias globales hecha por nosotros!"
+    },
+    "hero": {
+      "subtitle": "Propuesta de inversión más reciente",
+      "title": "Vista al mar <br/> Villa de lujo",
+      "desc": "15.000 SF, propiedad de 20 habitaciones <br/> con acceso a una <br/> increíble playa privada"
+    }
+  },
+  "details": {
+    "financialTile": "Beneficios y dividendos",
+    "financialDesc": "Los dividendos se pagan de forma única a todos los inversores de este proyecto. Los dividendos se pagarán en INR directamente del emisor al inversor. Sin intermediarios, sin intermediarios involucrados.",
+    "dividend": "Dividendos",
+    "revenueRent": "Ingresos por alquiler",
+    "revenueFees": "Ingresos por tarifas",
+    "other": "Otro",
+    "projectedProfit": "Beneficios mensuales proyectados",
+    "roadmapTitle": "Hoja de ruta de inversión",
+    "investmentboxTitle": "Hacer una inversión",
+    "packageSel": "Elija un paquete o",
+    "packageOffer": "Solicitar oferta personalizada",
+    "package": {
+      "copper": "Paquete de cobre",
+      "silver": "Paquete de plata",
+      "gold": "Paquete de oro",
+      "platinum": "Paquete platino"
+    },
+    "ourTeam": "Nuestro equipo"
+  },
+  "wallet": {
+    "title": "BILLETERA",
+    "table": {
+      "title_primary": "Billetera- Primaria",
+      "title_secondary": "Billetera- Secundaria",
+      "header_name": "Nombre",
+      "header_balance": "Equilibrar",
+      "header_available": "Disponible",
+      "header_order": "En orden",
+      "header_action": "Acción",
+      "deposit_button": "Depositar",
+      "withdraw_button": "Retirar"
+    },
+    "deposit_modal": {
+      "title": "Depositar",
+      "text": "¿Cómo le gustaría hacer su depósito?",
+      "button": "Ð-Cuenta de moneda",
+      "form": {
+        "label": "Mi numero de cuenta",
+        "notice": "Aviso imperativo: copie y pegue el mensaje como se muestra arriba en el campo del mensaje en la transacción de depósito, de lo contrario, perderá su dinero.",
+        "message": "Mensaje"
+      }
+    },
+    "withdraw_modal": {
+      "title": "Retirar",
+      "text": "Seleccione su método de retiro a continuación.",
+      "button": "Ð-Cuenta de moneda",
+      "form": {
+        "label": "Ð-Dirección de la cuenta de moneda",
+        "message": "Mensaje",
+        "amount": "Cantidad",
+        "button": "Retirar"
+      }
+    }
+  },
+  "purchase": {
+    "title": "Compra",
+    "table": {
+      "title": "Apartamentos de lujo en India",
+      "column_1": "Cantidad de acciones",
+      "column_2": "Precio por acción",
+      "column_3": "Comparte"
+    },
+    "form": {
+      "title": "ELIGE MONEDA",
+      "available": "Saldo disponible",
+      "price": "Precio",
+      "size": "Cantidad",
+      "total": "Total Estimado",
+      "with": "Con",
+      "fee": "cuota:",
+      "button": "Pagar"
+    }
+  },
+  "error": {
+    "invitationCode": "Por favor ingrese un código válido"
+  }
+}

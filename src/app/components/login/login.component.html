@@ -1,0 +1,18 @@
+<div class="bg-contact bg-contain bg-left-bottom bg-no-repeat bg-watermark pt-48 pb-24 md:px-24 text-center">
+  <div class="text-sky-500 text-xl font-light">Still got Questions?</div>
+  <div class="text-blue-900 text-2xl md:text-5xl uppercase font-light mt-5">
+    Message US !<br/>We will be happy to answer<br/>All your questions
+  </div>
+  <div class="mt-10 w-5/6 mx-auto">
+    <form name="contact" method="post" [formGroup]="userLoginForm" (ngSubmit)="userLogin()">
+      <div class="grid grid-cols-2 gap-4">
+        <input type="text" placeholder="First Name" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+        <input type="text" placeholder="Last Name" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+        <input type="text" placeholder="Email Address" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+        <input type="text" placeholder="Phone" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+        <textarea placeholder="Message" class="border-gray-200 border-1 text-sm col-span-2 h-40 py-2 px-4 rounded-sm"></textarea>
+      </div>
+      <button class="text-xs text-white bg-blue-1200 font-bold mt-12 rounded py-3 px-8 sm:w-4/12 uppercase">Send us your message</button>
+    </form>
+  </div>
+</div>

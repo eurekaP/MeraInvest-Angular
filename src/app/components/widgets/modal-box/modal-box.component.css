@@ -1,0 +1,23 @@
+.pop_logo {
+  background: #333;
+  padding: 1em 2em;
+  text-align: center;
+}
+.modal_content {
+  padding: 1em;
+}
+.modal_content h2 {
+  font-size: 1em;
+  line-height: 26px;
+  text-align: center;
+}
+.modal_action {
+  text-align: center;
+}
+.modal_batp_btn {
+  border-radius: 2px;
+  padding: 12px 3em;
+}
+.modal_action {
+  padding: 0 0 20px;
+}

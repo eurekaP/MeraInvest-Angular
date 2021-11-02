@@ -1,0 +1,111 @@
+<!-- Header area -->
+<header class="bg-white p-6 fixed md:relative z-30">
+  <div class="grid grid-cols-16 gap-6">
+    <!-- Logo -->
+    <div class="col-span-12 sm:col-span-15 md:col-span-2">
+      <a routerLink="/">
+        <img src="https://cdn.filestackcontent.com/d0HDMQY4Sg6ixtdOul4n" alt="Merainvest Logo" class="w-28">
+      </a>
+    </div>
+    <!-- Top nav menu -->
+    <nav class="col-span-10 hidden md:block px-8">
+      <div class="grid grid-cols-18 gap-8">
+        <div class="col-span-2 text-sm text-blue-900 font-medium text-center">
+          <a routerLink="/">{{ 'header.home'|translate: {default: 'Home'} }}</a>
+        </div>
+        <!-- Bullets -->
+        <!--<div class="col-span-1">
+          <span class="inline-block w-1 h-1 bg-sky-500 transform rotate-45 mb-1"></span>
+        </div>
+        <div class="col-span-5 text-sm text-blue-900 font-medium text-center">{{ 'header.OurProperties'|translate }}</div>
+        &lt;!&ndash; Bullets &ndash;&gt;
+        <div class="col-span-1">
+          <span class="inline-block w-1 h-1 bg-sky-500 transform rotate-45 mb-1"></span>
+        </div>
+        <div class="col-span-3 text-sm text-blue-900 font-medium text-center">{{ 'header.about'|translate }}</div>
+        &lt;!&ndash; Bullets &ndash;&gt;
+        <div class="col-span-1">
+          <span class="inline-block w-1 h-1 bg-sky-500 transform rotate-45 mb-1"></span>
+        </div>
+        <div class="col-span-5 text-sm text-blue-900 font-medium text-center">{{ 'header.contact'|translate }}</div>-->
+      </div>
+    </nav>
+    <!-- User menu -->
+    <div class="col-span-4 hidden md:block text-right relative">
+      <!-- User menuitems -->
+      <a href="javascript:void(0);"
+         class="text-sm text-blue-900 font-medium uppercase mx-2">{{ 'header.login'|translate: {default: 'Login'} }}</a>
+      <a href="javascript:void(0);"
+         class="text-sm text-blue-900 font-medium uppercase mr-6">{{ 'header.signup'|translate: {default: 'Signup'} }}</a>
+      <!-- Language Flags -->
+      <a href="javascript:void(0)" class="active-lang" (click)="toggleDropDownMenu()">
+        <img src="{{ languageData[activeLang].icon }}" alt="{{ languageData[activeLang].name }}" class="h-4 w-6 inline-block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 24 24" class="inline-block"><path d="M12 21l-12-18h24z"/></svg>
+      </a>
+      <ul *ngIf="isMenuShow" class="bg-water shadow-md w-44 absolute right-0 mt-2">
+        <li *ngFor="let lang of languageData; index as idx;" class="block p-3 text-center border-b-1 border-gray-200">
+          <a href="javascript:void(0)" (click)="setLanguage(idx)" title="{{ lang.name }}">
+            <img class="h-4 w-7 inline-block mr-3" src="{{ lang.icon }}" alt="{{ lang.name }}">
+            <span class="inline-block text-sm text-blue-900 font-medium">{{ lang.name }}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile menu -->
+    <div class="col-span-2 sm:col-span-1 md:hidden">
+      <!-- Mobile menu button -->
+      <div class="md:hidden items-center">
+        <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white ml-auto" (click)="mobileMenuToggle()">
+          <span class="sr-only">Open main menu</span>
+          <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                  [ngClass]="isMobileMenuShow ? ' rotate-45' : ' -translate-y-1.5'"></span>
+            <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
+                  [ngClass]="{'opacity-0': isMobileMenuShow}"></span>
+            <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
+                  [ngClass]="isMobileMenuShow ? ' -rotate-45' : ' translate-y-1.5'"></span>
+          </div>
+        </button>
+      </div>
+      <div
+        [ngClass]="isMobileMenuShow ? '' : ' scale-x-0'"
+        class="absolute top-20 right-0 h-screen w-4/6 bg-white z-30 shadow-md transform-gpu transition-transform duration-500 ease-in-out origin-right">
+        <!-- Mobile language -->
+        <ul class="text-center">
+          <li *ngFor="let lang of languageData; index as idx;" class="inline-block p-3">
+            <a href="javascript:void(0)" (click)="setLanguage(idx)" title="{{ lang.name }}">
+              <img class="h-6 w-6" src="{{ lang.icon }}" alt="{{ lang.name }}">
+            </a>
+          </li>
+        </ul>
+        <!-- Main menu -->
+        <ul class="px-5 mt-16">
+          <li class="block p-3 border-b-1 border-gray-200">
+            <a href="javascript:void(0)" title="English" class="">
+              <span class="inline-block w-2 h-2 bg-sky-500 transform rotate-45 mr-2 mb-1"></span>
+              <span class="inline-block text-lg text-blue-900">{{ 'header.home'|translate: {default: 'Home'} }}</span>
+            </a>
+          </li>
+          <!--<li class="block p-3 border-b-1 border-gray-200">
+            <a href="javascript:void(0)" title="Spanish">
+              <span class="inline-block w-2 h-2 bg-sky-500 transform rotate-45 mr-2 mb-1"></span>
+              <span class="inline-block text-lg text-blue-900">{{ 'header.OurProperties'|translate: {default: 'Choose a Packages or'} }}</span>
+            </a>
+          </li>
+          <li class="block p-3 border-b-1 border-gray-200">
+            <a href="javascript:void(0)" title="German">
+              <span class="inline-block w-2 h-2 bg-sky-500 transform rotate-45 mr-2 mb-1"></span>
+              <span class="inline-block text-lg text-blue-900">{{ 'header.about'|translate: {default: 'Choose a Packages or'} }}</span>
+            </a>
+          </li>
+          <li class="block p-3 border-b-1 border-gray-200">
+            <a href="javascript:void(0)" title="French">
+              <span class="inline-block w-2 h-2 bg-sky-500 transform rotate-45 mr-2 mb-1"></span>
+              <span class="inline-block text-lg text-blue-900">{{ 'header.contact'|translate: {default: 'Choose a Packages or'} }}</span>
+            </a>
+          </li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

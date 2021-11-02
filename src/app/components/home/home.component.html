@@ -1,0 +1,346 @@
+<!-- Content box -->
+<div class="mt-20 md:mt-0 w-full flex-1 shadow-xl">
+  <!-- Banner area -->
+  <div class="bg-hero bg-cover h-hero-xs sm:h-hero-sm md:h-hero-md lg:h-hero-full w-full p-6 md:p-16 lg:p-32">
+    <div class="text-xss md:text-sm lg:text-base text-blue-900">{{ 'home.hero.subtitle' | translate: {default: 'Newest Investment Proposal'} }}</div>
+    <div class="text-xl md:text-3xl lg:text-7xl text-blue-900 mt-2 uppercase" [innerHTML]="'home.hero.title' | translate: {default: 'Ocean View<br/>Luxury Villa'}"></div>
+    <div class="text-sm md:text-base lg:text-xl text-blue-900 mt-3 md:mt-5 lg:mt-8" [innerHTML]="'home.hero.desc' | translate: {default: '15.000 SF, 20 Bedroom property<br/>with access to amazing private<br/>beach'}"></div>
+  </div>
+  <!-- Featured area -->
+  <div class="pt-24 bg-water bg-contain bg-left-bottom bg-no-repeat bg-watermark px-6 md:px-10 lg:px-20 pb-8 md:pb-14 lg:pb-24">
+    <!-- Overlapping Emblem -->
+    <div class="hero-emblem transform mt-hero-emblem-sm md:mt-hero-emblem-md lg:mt-hero-emblem-lg mt-hero-emblem -rotate-45 w-min mx-auto border-4 md:border-10 lg:border-20">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="16.717 16.718 89.565 89.564" class="w-6 h-6 md:w-12 md:h-12 lg:w-24 lg:h-24"><defs><path d="M67.97 44.16h17.74l-59.13 59.12h-8.86v-8.86l50.25-50.26z" id="a"/><path d="M30.26 52.91l7.06-7.05h17.73L17.72 83.19V17.72h85.56v85.56H37.81l28.46-28.46h17.74L68.09 90.74h22.65V30.26H30.26v22.65z" id="b"/></defs><use xlink:href="#a" fill="#5fc9d4"/><use xlink:href="#a" fill-opacity="0" stroke="#000" stroke-opacity="0"/><g><use xlink:href="#b" fill="#00205d"/><use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"/></g></svg>
+    </div>
+    <!-- Featured header -->
+    <div class="text-center mt-6 lg:mt-12">
+      <h3 class="text-sky-500">{{ 'home.trusted' | translate: {default: 'Trusted Partner'} }}</h3>
+      <h1 class="mt-3 font-light text-xl md:text-3xl lg:text-5xl text-blue-900 uppercase" [innerHTML]="'home.trustedDesc' | translate: {default: 'Investing in luxury<br/>Estate in Superb<br/>Locations'}"></h1>
+    </div>
+    <!-- Featured Carousel -->
+    <!--<div class="flex mt-4 md:mt-7 lg:mt-9">
+      <div class="flex-1 w-1/2">
+        <img src="https://cdn.filestackcontent.com/R0qMtXrOQ0FtMG1zJmxb" alt="Carousel 1" class="w-full"/>
+      </div>
+      <div class="flex-1 w-1/2 p-2 md:pl-9 text-sm text-gray-600">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus eros, iaculis laoreet porta quis, porttitor sed quam. Nunc blandit, neque sed ultrices maximus, turpis turpis hendrerit augue, at convallis ante purus ac sem. Aliquam eget mauris nec sem sodales cursus nec nec diam.</p>
+      </div>
+    </div>-->
+  </div>
+  <!-- Search and list area -->
+  <div class="px-6 md:px-10 lg:px-20 pt-24 block-bg-grad pb-5">
+    <h3 class="text-center text-sky-500">{{ 'home.portfolio'|translate: {default: 'Our Portfolio'} }}</h3>
+    <h1 class="text-center mt-3 font-light text-xl md:text-3xl lg:text-5xl text-blue-900 uppercase">{{'home.portfolioDesc'|translate: {default: 'Unique Selection of Properties'} }}</h1>
+    <!-- Search bar -->
+    <!--<div class="my-20 bg-water grid grid-cols-18">
+      <div class="py-7 md:py-5 pl-5 bg-blue-1200 w-7 md:w-10 lg:w-12 rounded col-span-1">
+        <svg class="fill-current text-white z-20 relative hidden sm:block" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 390.001 390"><g fill-rule="evenodd"><path d="M174.791 140.718l40.418-40.419v269.494l-20.207 20.206-20.21-20.206z" /><path d="M108.795 246.628v-32.16l40.419-40.417v170.145L.001 194.991 195.001 0l195 194.991-149.213 149.206V214.468l40.418-40.417v72.577l51.64-51.637L195.002 57.153 57.155 194.991z" /></g><path d="M174.792 369.793V140.718l40.417-40.419v269.494L195.001 390zm66-155.324l40.419-40.418v72.577l51.639-51.637L195.001 57.152 57.156 194.991l51.639 51.637v-32.159l40.419-40.418V344.2L.001 194.991 195.001 0l195 194.991L240.789 344.2z" opacity=".99"/></svg>
+      </div>
+      <div class="border-gray-200 border-2 relative rounded col-span-17 search-tag sm:-ml-3 lg:-ml-5.3 border-l-0 pl-4 sm:pl-12 md:pl-14">
+        <div class="grid grid-cols-16 py-4 text-blue-900">
+          <span class="col-span-16 sm:col-span-3 md:col-span-2 lg:col-span-3 font-bold sm:font-normal lg:font-bold lg:leading-10 text-sm lg:text-base">Find Investment:</span>
+          <div class="col-span-16 sm:col-span-13 md:col-span-14 lg:col-span-13 lg:ml-0">
+            <form>
+              <select class="text-xs text-gray-600 py-3 px-3 w-11/12 sm:w-2.5/12 ml-2 my-1 sm:my-0 rounded border-gray-300" name="propType">
+                <option value="Type">Property Type</option>
+                <option value="Type">Property Type</option>
+                <option value="Type">Property Type</option>
+              </select>
+              <select class="text-xs text-gray-600 py-3 px-3 w-11/12 sm:w-2.5/12 ml-2 my-1 sm:my-0 rounded border-gray-300" name="location">
+                <option value="Type">Location</option>
+                <option value="Type">Location</option>
+                <option value="Type">Location</option>
+              </select>
+              <select class="text-xs text-gray-600 py-3 px-3 w-11/12 sm:w-2.5/12 ml-2 my-1 sm:my-0 rounded border-gray-300" name="price">
+                <option value="Type">Price Range</option>
+                <option value="Type">Price Range</option>
+                <option value="Type">Price Range</option>
+              </select>
+              <button class="text-xs text-white bg-sky-400 rounded-md py-3 px-4 sm:w-3/12 ml-2 my-1 sm:my-0 uppercase">Search for Property</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <!-- List Grid -->
+    <div class="grid grid-cols-6 gap-4 my-16">
+      <!-- Card -->
+      <div *ngFor="let asset of assetList; index as i;"
+           (click)="gettoDetails(asset.idCompany)"
+           class="w-full mb-4 h-full col-span-6 sm:col-span-3 lg:col-span-2 cursor-pointer">
+        <div class="bg-white rounded border-2 h-full hover:border-sky-300">
+          <ng-container *ngFor="let doc of asset.documentInfo">
+            <div *ngIf="doc.docType === 2" class="w-full h-0 relative pt-card-cover max-h-card-cover overflow-hidden">
+              <img src="{{ doc.docName }}" alt="Property 1" class="rounded-t-sm block absolute top-0 w-full"/>
+            </div>
+          </ng-container>
+          <div class="w-full p-5">
+            <div class="transform -rotate-45 w-min -mt-10 border-white border-8 bg-white mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 195 195"><g fill-rule="evenodd"><path d="M114.529 60.436h40.397L20.25 194.947H.054l-.002-20.173z" fill="#5fc9d4"/><path d="M28.621 80.358l16.072-16.052 40.396.001L.062 149.232.058.282 194.95.287l.005 194.656-149.131-.003 64.83-64.752h40.397l-36.27 36.226 51.611.001-.003-137.601-137.77-.005z" fill="#00205d"/></g><path d="M.052 174.775L114.53 60.436h40.397L20.25 194.947H.053zm110.604-44.585l40.397.001-36.27 36.225 51.611.001-.005-137.604L28.62 28.81l.001 51.548 16.071-16.051H85.09L.06 149.234.059.282 194.95.287l.005 194.656-149.132-.001z" opacity=".99" fill="#152864"/></svg>
+            </div>
+            <h3 class="text-blue-900 text-center font-semibold text-lg mt-4">{{ asset.companyName }}</h3>
+            <div class="grid grid-rows-2">
+              <div class="grid grid-cols-12 mt-7 border-gray-200 border-b-1">
+                <div class="col-span-5 text-gray-500 mb-2">
+                  <p class="block text-xs lg:text-sm font-bold">{{ 'home.view.label1' | translate: {default: 'Area'} }}</p>
+                  <!--<p class="block text-xs lg:text-sm font-bold">Loft Size</p>-->
+                  <!--<p class="block text-xs lg:text-sm font-bold">Spec</p>-->
+                </div>
+                <div class="col-span-7 text-gray-500 mb-2">
+                  <p class="block text-xs lg:text-sm text-right">{{asset.shareholdingCapital}} Sf</p>
+                  <!--<p class="block text-xs lg:text-sm text-right">15.000 Sf</p>-->
+                  <!--<p class="block text-xs lg:text-sm text-right">4 Bedrooms, 4 Bathrooms, 310m<span>2</span></p>-->
+                </div>
+              </div>
+              <div class="grid grid-cols-12 mt-3 border-gray-200">
+                <div class="col-span-5 text-blue-900">
+                  <p class="block text-xs lg:text-sm font-bold">{{ 'home.view.label2' | translate: {default: 'Price psf'} }}</p>
+                  <p class="block text-xs lg:text-sm font-bold">{{ 'home.view.label3' | translate: {default: 'Rental Yield'} }}</p>
+                  <p class="block text-xs lg:text-sm font-bold">{{ 'home.view.label4' | translate: {default: 'Return Target'} }}</p>
+                  <p class="block text-xs lg:text-sm font-bold">{{ 'home.view.label5' | translate: {default: 'Min.Investment'} }}</p>
+                </div>
+                <div class="col-span-7 text-blue-900">
+                  <p class="block text-xs lg:text-sm text-right font-bold">{{asset.paidinCapital}}</p>
+                  <p class="block text-xs lg:text-sm text-right font-bold">{{asset.shareValue}}%</p>
+                  <p class="block text-xs lg:text-sm text-right font-bold">{{asset.estimatedRevenue}}%</p>
+                  <p class="block text-xs lg:text-sm text-right font-bold">{{asset.annualTurnover}} €</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promotion Card -->
+      <div class="w-full mb-4 h-full col-span-6 sm:col-span-3 lg:col-span-2 min-h-card">
+        <div class="rounded h-full mb-1 bg-grid-promo bg-cover px-8 py-11">
+          <div class="text-lg text-sky-300">{{'home.promoTitle'|translate: {default: 'Looking for something different?'} }}</div>
+          <div class="text-3xl uppercase text-white mt-3 pr-7">{{ 'home.promoDesc'|translate: {default: 'Request our Custom made investment offer'} }}
+            <img src="https://cdn.filestackcontent.com/qxo9YR69TDCGKCceCZwQ" alt="Arrow" class="inline ml-2"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Why MERA INVEST -->
+  <div class="px-6 md:px-10 lg:px-20 pt-24 pb-5 bg-about bg-contain bg-no-repeat bg-right-bottom relative">
+    <h3 class="text-center text-sky-500">{{ 'home.whyMera.title'|translate: {default: 'Why MERA INVEST'} }}</h3>
+    <h1 class="text-center mt-3 font-light text-xl md:text-3xl lg:text-5xl text-blue-900 uppercase" [innerHTML]="'home.whyMera.subtitle'|translate: {default: 'Run by Trusted<br>Investment & Real Estate<br>Specialists'}"></h1>
+    <div class="grid grid-cols-6 gap-6 my-16">
+      <!-- List Item -->
+      <div class="w-full mb-4 h-full col-span-6 sm:col-span-3 lg:col-span-2 mt-12">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-1">
+              <span class="block bg-icono w-14 h-14 sm:w-20 sm:h-20 border-icono border-1 transform -rotate-45 text-center">
+                <img src="https://cdn.filestackcontent.com/UlmGZZjZQmiVBLiAAukd" alt="Trusted Icon" class="transform rotate-45 w-8 h-8 ml-3 mt-3 sm:w-12 sm:h-12 sm:ml-5 sm:mt-5"/>
+              </span>
+          </div>
+          <div class="col-span-2 align-top -mt-3">
+            <div class="text-base leading-none text-blue-900 font-medium" [innerHTML]="'home.whyMera.list1Title'|translate: {default: 'Trusted Investment<br>Company'}"></div>
+            <div class="text-sm text-gray-500 mt-3">{{ 'home.whyMera.list1Desc'|translate: {default: 'MERA INVEST is trusted by millions'} }}</div>
+          </div>
+        </div>
+      </div>
+      <!-- List Item -->
+      <div class="w-full mb-4 h-full col-span-6 sm:col-span-3 lg:col-span-2 mt-12">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-1">
+              <span class="block bg-icono w-14 h-14 sm:w-20 sm:h-20 border-icono border-1 transform -rotate-45 text-center">
+                <img src="https://cdn.filestackcontent.com/WnFph7ORVGxPca339dnY" alt="Low Risk Icon" class="transform rotate-45 w-8 h-8 ml-3 mt-3 sm:w-12 sm:h-12 sm:ml-3 sm:mt-4"/>
+              </span>
+          </div>
+          <div class="col-span-2 align-top -mt-3">
+            <div class="text-base leading-none text-blue-900 font-medium" [innerHTML]="'home.whyMera.list2Title'|translate: {default: 'Low Risk, Secure<br>Investment'}"></div>
+            <div class="text-sm text-gray-500 mt-3">{{ 'home.whyMera.list2Desc'|translate: {default: 'Low risk investment in real-estate'} }}</div>
+          </div>
+        </div>
+      </div>
+      <!-- List Item -->
+      <div class="w-full mb-4 h-full col-span-6 sm:col-span-3 lg:col-span-2 mt-12">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-1">
+              <span class="block bg-icono w-14 h-14 sm:w-20 sm:h-20 border-icono border-1 transform -rotate-45 text-center">
+                <img src="https://cdn.filestackcontent.com/yIvWIO75QTa19lciqGk4" alt="Trusted Icon" class="transform rotate-45 w-8 h-8 ml-3 mt-3 sm:w-12 sm:h-12 sm:ml-4 sm:mt-4"/>
+              </span>
+          </div>
+          <div class="col-span-2 align-top -mt-3">
+            <div class="text-base leading-none text-blue-900 font-medium" [innerHTML]="'home.whyMera.list3Title'|translate: {default: 'Highly Profitable<br>Investment'}"></div>
+            <div class="text-sm text-gray-500 mt-3">{{ 'home.whyMera.list3Desc'|translate: {default: 'Get highest ROI with global real-estate investment'} }}</div>
+          </div>
+        </div>
+      </div>
+      <!-- List Item -->
+      <div class="w-full mb-4 h-full col-span-6 sm:col-span-3 lg:col-span-2 mt-12">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-1">
+              <span class="block bg-icono w-14 h-14 sm:w-20 sm:h-20 border-icono border-1 transform -rotate-45 text-center">
+                <img src="https://cdn.filestackcontent.com/HUZVe1jxRdmnVtIhXRZh" alt="Trusted Icon" class="transform rotate-45 w-8 h-8 ml-3 mt-3 sm:w-12 sm:h-12 sm:ml-3 sm:mt-4"/>
+              </span>
+          </div>
+          <div class="col-span-2 align-top -mt-3">
+            <div class="text-base leading-none text-blue-900 font-medium" [innerHTML]="'home.whyMera.list4Title'|translate: {default: 'Simple Investment<br>Process'}"></div>
+            <div class="text-sm text-gray-500 mt-3">{{ 'home.whyMera.list4Desc'|translate: {default: 'Investment in global real-estate made easy, in only a few steps'} }}</div>
+          </div>
+        </div>
+      </div>
+      <!-- List Item -->
+      <div class="w-full mb-4 h-full col-span-6 sm:col-span-3 lg:col-span-2 mt-12">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-1">
+              <span class="block bg-icono w-14 h-14 sm:w-20 sm:h-20 border-icono border-1 transform -rotate-45 text-center">
+                <img src="https://cdn.filestackcontent.com/52JRqizPS4eQaTuqn1sr" alt="Trusted Icon" class="transform rotate-45 w-8 h-8 ml-3 mt-3 sm:w-12 sm:h-12 sm:ml-4 sm:mt-4"/>
+              </span>
+          </div>
+          <div class="col-span-2 align-top -mt-3">
+            <div class="text-base leading-none text-blue-900 font-medium" [innerHTML]="'home.whyMera.list5Title'|translate: {default: 'Amazing Properties<br>Locations'}"></div>
+            <div class="text-sm text-gray-500 mt-3">{{ 'home.whyMera.list5Desc'|translate: {default: 'Cherry-picked high-value premium properties, globally'} }}</div>
+          </div>
+        </div>
+      </div>
+      <!-- List Item -->
+      <div class="w-full mb-4 h-full col-span-6 sm:col-span-3 lg:col-span-2 mt-12">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-1">
+              <span class="block bg-icono w-14 h-14 sm:w-20 sm:h-20 border-icono border-1 transform -rotate-45 text-center">
+                <img src="https://cdn.filestackcontent.com/NneD3bYBRh2OGdUWTFoB" alt="Trusted Icon" class="transform rotate-45 w-8 h-8 ml-3 mt-3 sm:w-12 sm:h-12 sm:ml-4 sm:mt-4"/>
+              </span>
+          </div>
+          <div class="col-span-2 align-top -mt-3">
+            <div class="text-base leading-none text-blue-900 font-medium" [innerHTML]="'home.whyMera.list6Title'|translate: {default: 'Best Properties<br>on Market'}"></div>
+            <div class="text-sm text-gray-500 mt-3">{{ 'home.whyMera.list6Desc'|translate: {default: 'Investment options for best propertied on global market'} }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Quote -->
+    <div class="my-28 text-center w-full">
+      <div class="font-bold text-cyan-500 text-4xl font-sans">"</div>
+      <div class="text-2xl text-blue-900" [innerHTML]="'home.founderQuote'|translate: {default: 'In MERA INVEST we are focused<br/>to provide our clients, an unique, curated selection<br/>of best on market properties'}"></div>
+      <div class="mt-6">
+        <div class="text-xl text-sky-500">Andre Wels</div>
+        <div class="text-xs font-bold text-gray-600">{{ 'home.founderDesig'|translate: {default: 'Co-Founder & Director'} }}</div>
+      </div>
+    </div>
+    <!-- AD box -->
+    <div class="relative w-full h-28 md:h-64 rounded bg-blue-1200 mx-auto -mb-32">
+      <div class="grid grid-cols-10">
+        <div class="col-span-1 md:col-span-4">
+          <img src="https://cdn.filestackcontent.com/MjOZqY5zT0eqSwl8X1L5" alt="Banner" class="h-0 md:h-64"/>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390.001 390" class="absolute -mt-72 ml-4 w-0 md:w-84 md:h-84">
+            <g fill-rule="evenodd"><path d="m174.791 140.718 40.418-40.419v269.494l-20.207 20.206-20.21-20.206Z" fill="#5fc9d4"/><path d="M108.795 246.628v-32.16l40.419-40.417v170.145L.001 194.991 195.001 0l195 194.991-149.213 149.206V214.468l40.418-40.417v72.577l51.64-51.637L195.002 57.153 57.155 194.991Z" fill="#00205d"/></g>
+            <path d="M174.792 369.793V140.718l40.417-40.419v269.494L195.001 390Zm66-155.324 40.419-40.418v72.577l51.639-51.637L195.001 57.152 57.156 194.991l51.639 51.637v-32.159l40.419-40.418V344.2L.001 194.991 195.001 0l195 194.991L240.789 344.2Z" fill="#152864" opacity=".99"/>
+          </svg>
+        </div>
+        <div class="col-span-9 md:col-span-6 text-center pt-1 md:pt-14">
+          <div class="text-xs text-gray-500 font-bold">{{ 'home.adboxTitle'|translate: {default: 'With MERA INVEST'} }}</div>
+          <div class="text-white text-lg md:text-4xl font-light">{{ 'home.adboxDesc'|translate: {default: 'Investing in Luxury Real Estates'} }}</div>
+          <div class="text-sky-300 md:text-4xl font-light">{{ 'home.adboxSubhead'|translate: {default: 'Never Been Easier'} }}</div>
+          <!--<button class="text-xs text-white bg-cyan-500 font-bold mt-4 rounded-md py-3 px-4 sm:w-3/12 uppercase">Sign in Today</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- How it works -->
+  <div class="px-6 md:px-10 lg:px-20 pt-64 pb-32 bg-water">
+    <div class="grid grid-cols-12">
+      <div class="col-span-12 md:col-span-5">
+        <div class="text-sky-500 text-lg font-light">{{ 'home.howItWorks.title'|translate: {default: 'How it works'} }}</div>
+        <div class="text-blue-900 text-2xl md:text-3xl lg:text-5xl uppercase mt-4 font-light" [innerHTML]="'home.howItWorks.subtitle'|translate: {default: 'We believe that<br/>Investing in Real<br>Estates can be<br/>Simple'}"></div>
+        <div class="text-blue-900 mt-10 text-lg">{{ 'home.howItWorks.desc'|translate: {default: 'You are only a few steps away from finding your dream house or profitable investment.'} }}</div>
+      </div>
+      <div class="col-span-12 md:col-span-7 mt-7 md:mt-0">
+        <div class="grid grid-cols-4 gap-6">
+          <!-- Steps -->
+          <div class="col-span-1">
+              <span class="block bg-icono w-20 h-20 border-icono border-1 transform -rotate-45 text-center">
+                <img src="https://cdn.filestackcontent.com/YP1KLK2Q6GLgiFkqmVnA" alt="Login Icon" class="transform rotate-45 w-6 h-10 ml-6 mt-5"/>
+              </span>
+          </div>
+          <div class="col-span-3 align-top">
+            <div class="text-sky-500 text-base">{{ 'home.howItWorks.step1'|translate: {default: 'Step 1'} }}</div>
+            <div class="text-blue-900 text-xl">{{ 'home.howItWorks.step1Title'|translate: {default: 'Register to our site. It takes less than 5min!'} }}</div>
+            <div class="text-gray-600 text-sm mt-4">{{ 'home.howItWorks.step1Desc'|translate: {default: 'Easy registration'} }}</div>
+          </div>
+          <!-- Steps -->
+          <div class="col-span-1 mt-10">
+              <span class="block bg-icono w-20 h-20 border-icono border-1 transform -rotate-45 text-center">
+                <img src="https://cdn.filestackcontent.com/oiMOA1FXTQaMnisES0b2" alt="Search Icon" class="transform rotate-45 w-10 h-10 ml-5 mt-5"/>
+              </span>
+          </div>
+          <div class="col-span-3 align-top mt-10">
+            <div class="text-sky-500 text-base -mt-4">{{ 'home.howItWorks.step2'|translate: {default: 'Step 2'} }}</div>
+            <div class="text-blue-900 text-xl">{{ 'home.howItWorks.step2Title'|translate: {default: 'Search Our Database & Find Your Property'} }}</div>
+            <div class="text-gray-600 text-sm mt-4">{{ 'home.howItWorks.step2Desc'|translate: {default: 'A large pool of premium properties'} }}</div>
+          </div>
+          <!-- Steps -->
+          <div class="col-span-1 mt-10">
+              <span class="block bg-icono w-20 h-20 border-icono border-1 transform -rotate-45 text-center">
+                <img src="https://cdn.filestackcontent.com/UmuUc10gSYi0BQMcNICj" alt="Stock Icon" class="transform rotate-45 w-9 h-10 ml-5 mt-6"/>
+              </span>
+          </div>
+          <div class="col-span-3 align-top mt-10">
+            <div class="text-sky-500 text-base -mt-4">{{ 'home.howItWorks.step3'|translate: {default: 'Step 3'} }}</div>
+            <div class="text-blue-900 text-xl">{{ 'home.howItWorks.step3Title'|translate: {default: 'Invest in Property via our site'} }}</div>
+            <div class="text-gray-600 text-sm mt-4">{{ 'home.howItWorks.step3Desc'|translate: {default: 'Investment in global real-estate properties made by us!'} }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About merainvest -->
+  <div class="pt-24 bg-blue-1200 bg-contain bg-left-bottom bg-no-repeat bg-watermark px-6 md:px-10 lg:px-20 pb-8 md:pb-14 lg:pb-24 relative overflow-hidden">
+    <!-- Embedded Emblem -->
+    <div class="transform -rotate-45 w-min absolute -bottom-44 -right-50">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="16.717 16.718 89.565 89.564" class="w-6 h-6 md:w-12 md:h-12 lg:w-96 lg:h-96"><defs><path d="M67.97 44.16h17.74l-59.13 59.12h-8.86v-8.86l50.25-50.26z" id="a"/><path d="M30.26 52.91l7.06-7.05h17.73L17.72 83.19V17.72h85.56v85.56H37.81l28.46-28.46h17.74L68.09 90.74h22.65V30.26H30.26v22.65z" id="b"/></defs><use xlink:href="#a" fill="#5fc9d4"/><use xlink:href="#a" fill-opacity="0" stroke="#000" stroke-opacity="0"/><g><use xlink:href="#b" fill="#ffffff"/><use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"/></g></svg>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-16 md:gap-4">
+      <div class="col-span-1 md:col-span-6">
+        <h3 class="text-sky-500 w-full">People you can rely on</h3>
+        <h1 class="mt-3 font-light text-xl md:text-3xl lg:text-4xl text-white uppercase w-full">Experienced in Investing & Real Estate Specialists</h1>
+      </div>
+      <!-- Team -->
+      <div class="col-span-1 md:col-span-10">
+        <div class="grid grid-cols-2 md:grid-cols-10 gap-2 md:gap-6">
+          <!-- Team 1 -->
+          <div class="col-span-1 md:col-span-3">
+            <div class="text-center"><img src="https://cdn.filestackcontent.com/qHFkd6gzS1SFyFoGTuHq" alt="Andre Wels" class="mx-auto"></div>
+            <div class="text-center text-white md:text-xl font-bold">Andre Wels</div>
+            <div class="text-center text-sky-500 text-xs md:text-base">Director & Founder</div>
+          </div>
+          <!-- Team 1 -->
+          <div class="col-span-1 md:col-span-3">
+            <div class="text-center"><img src="https://cdn.filestackcontent.com/moB6WVSSSVyiOPbHGHsB" alt="Thande Moyane"  class="mx-auto"></div>
+            <div class="text-center text-white md:text-xl font-bold">Thande Moyane</div>
+            <div class="text-center text-sky-500 text-xs md:text-base">Chief of Marketing</div>
+          </div>
+          <!-- Team 1 -->
+          <div class="col-span-1 md:col-span-3">
+            <div class="text-center"><img src="https://cdn.filestackcontent.com/1s9eA9YtRig7UdOLLeAW" alt="Nolwazi Mzano"  class="mx-auto"></div>
+            <div class="text-center text-white md:text-xl font-bold">Nolwazi Mzano</div>
+            <div class="text-center text-sky-500 text-xs md:text-base">Head of Design</div>
+          </div>
+          <div class="col-span-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact form -->
+  <div class="bg-contact bg-contain bg-left-bottom bg-no-repeat bg-watermark pt-48 pb-24 md:px-24 text-center">
+    <div class="text-sky-500 text-xl font-light">Still got Questions?</div>
+    <div class="text-blue-900 text-2xl md:text-5xl uppercase font-light mt-5">
+      Message US !<br/>We will be happy to answer<br/>All your questions
+    </div>
+    <div class="mt-10 w-5/6 mx-auto">
+      <form name="contact" method="post">
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="First Name" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+          <input type="text" placeholder="Last Name" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+          <input type="text" placeholder="Email Address" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+          <input type="text" placeholder="Phone" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+          <textarea placeholder="Message" class="border-gray-200 border-1 text-sm col-span-2 h-40 py-2 px-4 rounded-sm"></textarea>
+        </div>
+        <button class="text-xs text-white bg-blue-1200 font-bold mt-12 rounded py-3 px-8 sm:w-4/12 uppercase">Send us your message</button>
+      </form>
+    </div>
+  </div>
+</div>

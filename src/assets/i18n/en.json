@@ -1,0 +1,264 @@
+{
+  "HOME": {
+    "TITLE": "Hello Angular with ngx-translate",
+    "TEXT": "This demo has been created using ngx-translate",
+    "SELECT": "Select Language"
+  },
+  "header": {
+    "home": "Home",
+    "OurProperties": "Our Properties",
+    "pro": "Properties",
+    "property": {
+      "subMenu1": "Buy",
+      "subMenu2": "Rent",
+      "subMenu3": "Lease",
+      "subMenu4": "Menu",
+      "menu": {
+        "menu1": "Menu One",
+        "menu2": "Menu Two",
+        "menu3": "Menu Three"
+      }
+    },
+    "benefits": "Benefits",
+    "about": "About Us",
+    "howItWork": "How it Works",
+    "contact": "Contact Us",
+    "setting": "Setting",
+    "settingMenu": {
+      "reset": "Update Password and Email",
+      "question": "Questionnaire",
+      "document": "Documentation",
+      "kyc": "KYC"
+    },
+    "wallet": "Wallet",
+    "logout": "Logout",
+    "login": "Login",
+    "signup": "Signup",
+    "prototype": "This prototype website is currently under construction."
+  },
+  "login": {
+    "title": "LOGIN",
+    "form": {
+      "label": "Email",
+      "placeholder_email": "Email Address",
+      "password": "Password",
+      "placeholder_pass": "Enter Password",
+      "button": "SIGN IN"
+    },
+    "forgot_password": "Forgot Password?",
+    "account1": "Don't have an Account?",
+    "account2": "Register Now",
+    "account3": "Already Registered?",
+    "account4": "LOGIN"
+  },
+  "register": {
+    "title": "SIGN UP",
+    "form": {
+      "label": "Email",
+      "placeholder_email": "Email Address",
+      "password": "Password",
+      "placeholder_pass": "Enter Password",
+      "confirm_password": "Confirm Password",
+      "placeholder_confirm": "Repeat Password",
+      "invitation": "Invitation Code",
+      "button": "Register"
+    },
+    "forgot_password": "Forgot Password?",
+    "account1": "Don't have an Account?",
+    "account2": "Register Now"
+  },
+  "footer": {
+    "about": "ABOUT MERA INVEST",
+    "about_description": "MERA INVEST, your innovative real estate platform. Digitally invest in premium real estate projects without the disadvantageous barriers of the classic investment market.",
+    "navi": "Navigations",
+    "navigation": {
+      "home": "Home",
+      "buy": "Buy",
+      "rent": "Rent",
+      "property": "Properties",
+      "about": "About Us",
+      "privacy": "Privacy Policy",
+      "contact": "Contact Us",
+      "terms": "Terms"
+    },
+    "follow_us": "FOLLOW US",
+    "copyright": "Copyright © All rights reserved | Mera Invest, Digital Real Estate."
+  },
+  "reset_password": {
+    "header": "Security",
+    "title": "Change Password",
+    "text": "Choose a strong password for high security.",
+    "form": {
+      "old_password": "Old Password",
+      "password": "New Password",
+      "confirm_password": "Repeat New Password",
+      "button": "UPDATE NOW"
+    }
+  },
+  "reset_email": {
+    "title": "Change E-Mail",
+    "text": "Setup a new email address.",
+    "form": {
+      "current_email": "Current Email Address",
+      "password": "Current Password",
+      "new_email": "New Email Address",
+      "button": "UPDATE NOW"
+    }
+  },
+  "forgot_password": {
+    "title": "Forgot Password",
+    "form": {
+      "label": "Email",
+      "placeholder_email": "Email Address",
+      "button": "Submit"
+    },
+    "account1": "Don't have an Account?",
+    "account2": "Register Now"
+  },
+  "reset": {
+    "title": "RESET PASSWORD",
+    "form": {
+      "password": "Password",
+      "placeholder_pass": "Enter Password",
+      "confirm_password": "Confirm Password",
+      "placeholder_confirm": "Repeat Password",
+      "button": "Reset Password"
+    },
+    "account1": "Don't have an Account?",
+    "account2": "Register Now"
+  },
+  "home": {
+    "view": {
+      "label1": "Area",
+      "label2": "Price psf",
+      "label3": "Rental Yield",
+      "label4": "Return Target",
+      "label5": "Min.Investment",
+      "label6": "INVESTORS",
+      "button": "View Property"
+    },
+    "trusted": "Trusted Partner in",
+    "trustedDesc": "Investing in luxury<br/>Estate in Superb<br/>Locations",
+    "portfolio": "Our Portfolio",
+    "portfolioDesc": "Unique Selection of Properties",
+    "promoTitle": "Looking for something different?",
+    "promoDesc": "Request our Custom made investment offer",
+    "whyMera": {
+      "title": "Why MERA INVEST",
+      "subtitle": "Run by Trusted<br>Investment & Real Estate<br>Specialists",
+      "list1Title": "Trusted Investment<br>Company",
+      "list1Desc": "MERA INVEST is trusted by millions",
+      "list2Title": "Low Risk, Secure<br>Investment",
+      "list2Desc": "Low risk investment in real-estate",
+      "list3Title": "Highly Profitable<br>Investment",
+      "list3Desc": "Get highest ROI with global real-estate investment",
+      "list4Title": "Simple Investment<br>Process",
+      "list4Desc": "Investment in global real-estate made easy, in only a few steps",
+      "list5Title": "Amazing Properties<br>Locations",
+      "list5Desc": "Cherry-picked high-value premium properties, globally.",
+      "list6Title": "Best Properties<br>on Market",
+      "list6Desc": "Investment options for best propertied on global market"
+    },
+    "founderQuote": "In MERA INVEST we are focused<br/>to provide our clients, an unique, curated selection<br/>of best on market properties",
+    "founderDesig": "Co-Founder & Director",
+    "adboxTitle": "With MERA INVEST",
+    "adboxDesc": "Investing in Luxury Real Estates",
+    "adboxSubhead": "Never Been Easier",
+    "howItWorks": {
+      "title": "How it works",
+      "subtitle": "We believe that<br/>Investing in Real<br>Estates can be<br/>Simple",
+      "desc": "You are only a few steps away from finding your dream house or profitable investment.",
+      "step1": "Step 1",
+      "step1Title": "Register to our site. It takes less than 5min!",
+      "step1Desc": "Easy registration",
+      "step2": "Step 2",
+      "step2Title": "Search Our Database & Find Your Property",
+      "step2Desc": "A large pool of premium properties",
+      "step3": "Step 3",
+      "step3Title": "Invest in Property via our site",
+      "step3Desc": "Investment in global real-estate properties made by us!"
+    },
+    "hero": {
+      "subtitle": "Newest Investment Proposal",
+      "title": "Ocean View<br/>Luxury Villa",
+      "desc": "15.000 SF, 20 Bedroom property<br/>with access to amazing private<br/>beach"
+    }
+  },
+  "details": {
+    "financialTile": "Profits & Dividends",
+    "financialDesc": "Dividends are paid out on an only basis to all investors in this project. Dividends will be paid in INR directly from the issuer to the investor. No middleman, no intermediaries involved.",
+    "dividend": "Dividends",
+    "revenueRent": "Revenue from rent",
+    "revenueFees": "Revenue from fees",
+    "other": "Other",
+    "projectedProfit": "Projected Monthly Profits",
+    "roadmapTitle": "Investment Roadmap",
+    "investmentboxTitle": "Make an Investment",
+    "packageSel": "Choose a Packages or",
+    "packageOffer": "Request Personalized Offer",
+    "package": {
+      "copper": "Copper Package",
+      "silver": "Silver Package",
+      "gold": "Gold Package",
+      "platinum": "Platinum Package"
+    },
+    "ourTeam": "Our Team"
+  },
+  "wallet": {
+    "title": "WALLET",
+    "table": {
+      "title_primary": "Wallet- Primary",
+      "title_secondary": "Wallet- Secondary",
+      "header_name": "Name",
+      "header_balance": "Balance",
+      "header_available": "Available",
+      "header_order": "On Order",
+      "header_action": "Action",
+      "deposit_button": "Deposit",
+      "withdraw_button": "Withdraw"
+    },
+    "deposit_modal": {
+      "title": "Deposit",
+      "text": "How would you like to make your deposit?",
+      "button": "Ð-Currency Account",
+      "form": {
+        "label": "My Account Number",
+        "notice": "Imporant notice: Please copy and paste the message as shown above on the message field in the deposit transaction, otherwise you loose your money!",
+        "message": "Message"
+      }
+    },
+    "withdraw_modal": {
+      "title": "Withdraw",
+      "text": "Select your method of withdrawal below.",
+      "button": "Ð-Currency Account",
+      "form": {
+        "label": "Ð-Currency Account Address",
+        "message": "Message",
+        "amount": "Amount",
+        "button": "Withdraw"
+      }
+    }
+  },
+  "purchase": {
+    "title": "Purchase",
+    "table": {
+      "title": "Luxury Apartments in India",
+      "column_1": "Share Amount",
+      "column_2": "Price Per Share",
+      "column_3": "Shares"
+    },
+    "form": {
+      "title": "CHOOSE CURRENCY",
+      "available": "Available Balance",
+      "price": "Price",
+      "size": "Amount",
+      "total": "Estimated Total",
+      "with": "With",
+      "fee": "fee",
+      "button": "Pay"
+    }
+  },
+  "error": {
+    "invitationCode": "Please enter a valid code"
+  }
+}

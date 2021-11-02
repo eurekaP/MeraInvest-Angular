@@ -1,0 +1,233 @@
+<!-- Content box -->
+<div class="w-full flex-1 shadow-xl">
+  <!-- Top banner -->
+  <div class="bg-blue-1200 h-40 w-full mb-12 p-14">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="16.717 16.718 89.565 89.564" width="36" height="36" class="transform -rotate-45 inline -mt-2 lg:-mt-6"><defs><path d="M67.97 44.16h17.74l-59.13 59.12h-8.86v-8.86l50.25-50.26z" id="a"/><path d="M30.26 52.91l7.06-7.05h17.73L17.72 83.19V17.72h85.56v85.56H37.81l28.46-28.46h17.74L68.09 90.74h22.65V30.26H30.26v22.65z" id="b"/></defs><use xlink:href="#a" fill="#5fc9d4"/><use xlink:href="#a" fill-opacity="0" stroke="#000" stroke-opacity="0"/><g><use xlink:href="#b" fill="#ffffff"/><use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"/></g></svg>
+    <span class="text-white text-3xl md:text-4xl lg:text-5xl font-light ml-7">{{ assetData.company.companyName }}</span>
+  </div>
+  <!-- Feature area -->
+  <div class="grid grid-cols-12 gap-6 mb-14 px-10 md:px-24">
+    <!-- Carousel -->
+    <div class="col-span-12 md:col-span-6">
+      <ng-container *ngFor="let img of resImage; index as i">
+        <img *ngIf="i == 0" src="{{ img.docName }}" alt="" class="w-full h-96"/>
+      </ng-container>
+    </div>
+    <!-- Info -->
+    <div class="col-span-12 md:col-span-6 pr-8">
+      <div class="text-blue-900 text-lg">About {{ assetData.company.companyName }}</div>
+      <div class="text-gray-500 mt-8 text-sm">{{ assetData.companyProfile.propertyDescription }}</div>
+      <div class="grid grid-cols-12 mt-8 w-full">
+        <!-- Info row -->
+        <!--<div class="col-span-6 md:col-span-3 text-gray-600 text-sm my-1">Location</div>
+        <div class="col-span-1 md:col-span-4 my-1"></div>
+        <div class="col-span-5 md:col-span-5 text-gray-600 font-bold text-sm text-right my-1">Romansbaai, RPA</div>-->
+        <!-- Info row -->
+        <div class="col-span-6 md:col-span-3 text-gray-600 text-sm my-1">Loft Size</div>
+        <div class="col-span-1 md:col-span-4 my-1"></div>
+        <div class="col-span-5 md:col-span-5 text-gray-600 font-bold text-sm text-right my-1">{{ assetData.companyFinancial.shareholdingCapital }} SqFt</div>
+        <!-- Info row -->
+        <!--<div class="col-span-6 md:col-span-3 text-gray-600 text-sm my-1">Area</div>
+        <div class="col-span-1 md:col-span-4 my-1"></div>
+        <div class="col-span-5 md:col-span-5 text-gray-600 font-bold text-sm text-right my-1">2 Floors, Basement</div>
+        &lt;!&ndash; Info row &ndash;&gt;
+        <div class="col-span-6 md:col-span-3 text-gray-600 text-sm my-1">Other</div>
+        <div class="col-span-1 md:col-span-4 my-1"></div>
+        <div class="col-span-5 md:col-span-5 text-gray-600 font-bold text-sm text-right my-1">6 Beds Capacity</div>-->
+        <!-- Ruler -->
+        <div class=" col-span-12 border-b-1 border-gray-300 my-2"></div>
+        <!-- Info row -->
+        <div class="col-span-6 md:col-span-4 text-blue-900 text-sm my-1">{{ 'home.view.label2' | translate: {default: 'Price psf'} }}</div>
+        <div class="col-span-1 md:col-span-4 my-1"></div>
+        <div class="col-span-5 md:col-span-4 text-blue-900 text-sm text-right my-1">{{ assetData.companyFinancial.paidinCapital }}</div>
+        <!-- Info row -->
+        <div class="col-span-6 md:col-span-4 text-blue-900 text-sm my-1">{{ 'home.view.label3' | translate: {default: 'Rental Yield'} }}</div>
+        <div class="col-span-1 md:col-span-4 my-1"></div>
+        <div class="col-span-5 md:col-span-4 text-blue-900 text-sm text-right my-1">{{ assetData.companyFinancial.shareValue }}%</div>
+        <!-- Info row -->
+        <div class="col-span-6 md:col-span-4 text-blue-900 text-sm my-1">{{ 'home.view.label4' | translate: {default: 'Return Target'} }}</div>
+        <div class="col-span-1 md:col-span-4 my-1"></div>
+        <div class="col-span-5 md:col-span-4 text-blue-900 text-sm text-right my-1">{{ assetData.companyFinancial.estimatedRevenue }}%</div>
+        <!-- Info row -->
+        <div class="col-span-6 md:col-span-4 text-blue-900 text-sm my-1">{{ 'home.view.label5' | translate: {default: 'Min.Investment'} }}</div>
+        <div class="col-span-1 md:col-span-4 my-1"></div>
+        <div class="col-span-5 md:col-span-4 text-blue-900 text-sm text-right my-1">{{ assetData.companyFinancial.annualTurnover }} €</div>
+        <!-- Ruler -->
+        <div class=" col-span-12 border-b-1 border-gray-300 my-2"></div>
+        <!-- Buttons -->
+        <!--<div class="text-blue-900 uppercase mt-9 col-span-6 lg:col-span-5">Download Onepager</div>
+        <div class="col-span-1 lg:col-span-2"></div>
+        <div class="col-span-5 lg:col-span-5">
+          <button class="text-xs text-white bg-sky-400 rounded py-4 px-4 w-full uppercase my-7">Make an Investment</button>
+        </div>-->
+      </div>
+    </div>
+  </div>
+  <!-- Financils -->
+  <div class="bg-blue-1200 w-full h-80 md:h-72 stat-bg px-10 md:px-24">
+    <div class="grid grid-cols-12 gap-6 py-10 md:py-20">
+      <div class="col-span-6">
+        <div class="grid grid-cols-16">
+          <div class="col-span-16 md:col-span-1 mb-2 md:mb-0 md:mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="16.717 16.718 89.565 89.564" width="36" height="36" class="transform -rotate-45"><defs><path d="M67.97 44.16h17.74l-59.13 59.12h-8.86v-8.86l50.25-50.26z" id="a"/><path d="M30.26 52.91l7.06-7.05h17.73L17.72 83.19V17.72h85.56v85.56H37.81l28.46-28.46h17.74L68.09 90.74h22.65V30.26H30.26v22.65z" id="b"/></defs><use xlink:href="#a" fill="#5fc9d4"/><use xlink:href="#a" fill-opacity="0" stroke="#000" stroke-opacity="0"/><g><use xlink:href="#b" fill="#ffffff"/><use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"/></g></svg>
+          </div>
+          <div class="col-span-16 md:col-span-15 md:pl-4">
+            <span class="block text-white text-5xl uppercase  font-light">{{ 'details.financialTile' | translate: {default: 'Profits & Dividends'} }}</span>
+            <span class="text-white text-sm block">{{ 'details.financialDesc' | translate: {default: 'Dividends are paid out on an only basis to all investors in this project. Dividends will be paid in INR directly from the issuer to the investor. No middleman, no intermediaries involved.'} }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1"></div>
+      <div class="col-span-5">
+        <div class="grid grid-cols-12">
+          <!-- Financial row -->
+          <div class="col-span-4 text-white text-sm font-bold">{{ 'details.dividend' | translate: {default: 'Dividends'} }}:</div>
+          <div class="col-span-4"></div>
+          <div class="col-span-4 text-white text-sm font-bold text-right">44.47 €</div>
+          <!-- Financial row -->
+          <div class="col-span-4 text-white text-sm font-bold">{{ 'details.revenueRent' | translate: {default: 'Revenue from rent'} }}:</div>
+          <div class="col-span-4"></div>
+          <div class="col-span-4 text-white text-sm font-bold text-right">3,847.00 €</div>
+          <!-- Financial row -->
+          <div class="col-span-4 text-white text-sm font-bold">{{ 'details.revenueFees' | translate: {default: 'Revenue from fees'} }}:</div>
+          <div class="col-span-4"></div>
+          <div class="col-span-4 text-white text-sm font-bold text-right">3,147.00 €</div>
+          <!-- Financial row -->
+          <div class="col-span-3 text-white text-sm font-bold">{{ 'details.other' | translate: {default: 'Other'} }}:</div>
+          <div class="col-span-5"></div>
+          <div class="col-span-4 text-white text-sm font-bold text-right">458.00 €</div>
+          <div class="col-span-12 border-1 border-gray-700 my-4"></div>
+          <!-- Total row -->
+          <div class="col-span-6 text-base text-cyan-500 font-bold">{{ 'details.projectedProfit' | translate: {default: 'Projected Monthly Profits'} }}</div>
+          <div class="col-span-2"></div>
+          <div class="col-span-4 text-cyan-500 text-bse font-bold text-right">3,147.00 €</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Roadmap -->
+  <div class="my-32 px-10 md:px-24">
+    <div class="grid grid-cols-12">
+      <div class="col-span-8 text-blue-900 text-3xl md:text-5xl font-light uppercase">{{ 'details.roadmapTitle' | translate: {default: 'Investment Roadmap'} }}</div>
+      <div class="col-span-4 text-3xl md:text-5xl text-sky-400 font-light text-right">Stage 02</div>
+    </div>
+    <div class="grid grid-cols-18 mt-12">
+      <!-- Roadmap step 1 -->
+      <ng-container *ngFor="let roadmap of assetData.roadmap; index as i;">
+        <div class="col-span-1 mt-6">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="16.717 16.718 89.565 89.564" width="20" height="20" class="transform -rotate-45"><defs><path d="M67.97 44.16h17.74l-59.13 59.12h-8.86v-8.86l50.25-50.26z" id="a"/><path d="M30.26 52.91l7.06-7.05h17.73L17.72 83.19V17.72h85.56v85.56H37.81l28.46-28.46h17.74L68.09 90.74h22.65V30.26H30.26v22.65z" id="b"/></defs><use xlink:href="#a" fill="#5fc9d4"/><use xlink:href="#a" fill-opacity="0" stroke="#000" stroke-opacity="0"/><g><use xlink:href="#b" fill="#00205d"/><use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"/></g></svg>
+        </div>
+        <div class="col-span-4 sm:col-span-3 md:col-span-2">
+          <div class="text-sky-500 text-xs font-medium">{{ roadmap.stage }}</div>
+          <div class="text-blue-900 text-lg md:text-xl lg:text-2xl">Stage {{ i }}</div>
+        </div>
+        <!-- Link -->
+        <div class="col-span-1 sm:col-span-2 md:col-span-3 px-1 sm:px-3 mt-8">
+          <div class="border-b-2 border-cyan-500"></div>
+        </div>
+      </ng-container>
+
+    </div>
+    <div class="grid grid-cols-18 mt-6">
+      <!-- Step texts -->
+      <ng-container *ngFor="let roadmap of assetData.roadmap; index as i;">
+        <div class="col-span-1"></div>
+        <div class="col-span-5">
+          <!-- Bullet points -->
+          <div class="text-sm text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.955 31.955" xml:space="preserve" width="5" height="5" class="inline mr-3"><g fill="#4fbecf"><path d="M27.25 4.655c-6.254-6.226-16.37-6.201-22.594.051-6.227 6.254-6.204 16.37.049 22.594 6.256 6.226 16.374 6.203 22.597-.051 6.224-6.254 6.203-16.371-.052-22.594z"/><path d="m13.288 23.896-1.768 5.207c2.567.829 5.331.886 7.926.17l-.665-5.416a8.382 8.382 0 0 1-5.493.039zM8.12 13.122l-5.645-.859a13.856 13.856 0 0 0 .225 8.143l5.491-1.375a8.391 8.391 0 0 1-.071-5.909zm20.643-1.789-4.965 1.675a8.39 8.39 0 0 1-.247 6.522l5.351.672a13.868 13.868 0 0 0-.139-8.869zm-17.369-8.45 1.018 5.528a8.395 8.395 0 0 1 6.442-.288l1.583-5.137a13.855 13.855 0 0 0-9.043-.103z"/><circle cx="15.979" cy="15.977" r="6.117"/></g></svg>
+            <span> {{ roadmap.description }}</span>
+          </div>
+          <!-- Bullet points
+          <div class="text-sm text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.955 31.955" xml:space="preserve" width="5" height="5" class="inline mr-3"><g fill="#4fbecf"><path d="M27.25 4.655c-6.254-6.226-16.37-6.201-22.594.051-6.227 6.254-6.204 16.37.049 22.594 6.256 6.226 16.374 6.203 22.597-.051 6.224-6.254 6.203-16.371-.052-22.594z"/><path d="m13.288 23.896-1.768 5.207c2.567.829 5.331.886 7.926.17l-.665-5.416a8.382 8.382 0 0 1-5.493.039zM8.12 13.122l-5.645-.859a13.856 13.856 0 0 0 .225 8.143l5.491-1.375a8.391 8.391 0 0 1-.071-5.909zm20.643-1.789-4.965 1.675a8.39 8.39 0 0 1-.247 6.522l5.351.672a13.868 13.868 0 0 0-.139-8.869zm-17.369-8.45 1.018 5.528a8.395 8.395 0 0 1 6.442-.288l1.583-5.137a13.855 13.855 0 0 0-9.043-.103z"/><circle cx="15.979" cy="15.977" r="6.117"/></g></svg>
+            <span> First talks with real estate projects held</span>
+          </div>
+          &lt;!&ndash; Bullet points &ndash;&gt;
+          <div class="text-sm text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.955 31.955" xml:space="preserve" width="5" height="5" class="inline mr-3"><g fill="#4fbecf"><path d="M27.25 4.655c-6.254-6.226-16.37-6.201-22.594.051-6.227 6.254-6.204 16.37.049 22.594 6.256 6.226 16.374 6.203 22.597-.051 6.224-6.254 6.203-16.371-.052-22.594z"/><path d="m13.288 23.896-1.768 5.207c2.567.829 5.331.886 7.926.17l-.665-5.416a8.382 8.382 0 0 1-5.493.039zM8.12 13.122l-5.645-.859a13.856 13.856 0 0 0 .225 8.143l5.491-1.375a8.391 8.391 0 0 1-.071-5.909zm20.643-1.789-4.965 1.675a8.39 8.39 0 0 1-.247 6.522l5.351.672a13.868 13.868 0 0 0-.139-8.869zm-17.369-8.45 1.018 5.528a8.395 8.395 0 0 1 6.442-.288l1.583-5.137a13.855 13.855 0 0 0-9.043-.103z"/><circle cx="15.979" cy="15.977" r="6.117"/></g></svg>
+            <span> Legal Framework is done</span>
+          </div>-->
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <!-- Investment -->
+  <div class="bg-contact my-32 px-10 md:px-24 pt-32 pb-24">
+    <div class="grid grid-cols-12 gap-1">
+      <div class="col-span-12 lg:col-span-7 text-blue-900 text-3xl md:text-5xl font-light uppercase">{{ 'details.investmentboxTitle' | translate: {default: 'Make an Investment'} }}</div>
+      <div class="col-span-12 lg:col-span-5 text-base md:text-lg text-gray-700 font-light text-right">
+        {{ 'details.packageSel' | translate: {default: 'Choose a Packages or'} }}:
+        <span class="text-base md:text-lg text-sky-400 font-light">{{ 'details.packageOffer' | translate: {default: 'Request Personalized Offer'} }}</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-4 gap-4 mt-9">
+      <!-- Price grid -->
+      <div class="col-span-4 md:col-span-2 lg:col-span-1 bg-blue-1200 p-4">
+        <div class="text-white text-xs font-bold">01</div>
+        <div class="text-xs text-sky-500 text-center font-medium mt-6">{{ 'details.package.copper' | translate: {default: 'Copper Package'} }}</div>
+        <div class="text-5xl text-white text-center font-light my-2">$500</div>
+        <div class="text-sky-500 text-sm text-center font-medium my-4">500 Shares</div>
+        <!--<button class="text-xs text-white bg-cyan-600 rounded py-3 px-14 mx-auto block uppercase my-7 font-bold">Purchase</button>-->
+      </div>
+      <!-- Price grid -->
+      <div class="col-span-4 md:col-span-2 lg:col-span-1 bg-blue-1200 p-4">
+        <div class="text-white text-xs font-bold">02</div>
+        <div class="text-xs text-sky-500 text-center font-medium mt-6">{{ 'details.package.silver' | translate: {default: 'Silver Package'} }}</div>
+        <div class="text-5xl text-white text-center font-light my-2">$1000</div>
+        <div class="text-sky-500 text-sm text-center font-medium my-4">1000 Shares</div>
+        <!--<button class="text-xs text-white bg-cyan-600 rounded py-3 px-14 mx-auto block uppercase my-7 font-bold">Purchase</button>-->
+      </div>
+      <!-- Price grid -->
+      <div class="col-span-4 md:col-span-2 lg:col-span-1 bg-blue-1200 p-4">
+        <div class="text-white text-xs font-bold">03</div>
+        <div class="text-xs text-sky-500 text-center font-medium mt-6">{{ 'details.package.gold' | translate: {default: 'Gold Package'} }}</div>
+        <div class="text-5xl text-white text-center font-light my-2">$1500</div>
+        <div class="text-sky-500 text-sm text-center font-medium my-4">1500 Shares</div>
+        <!--<button class="text-xs text-white bg-cyan-600 rounded py-3 px-14 mx-auto block uppercase my-7 font-bold">Purchase</button>-->
+      </div>
+      <!-- Price grid -->
+      <div class="col-span-4 md:col-span-2 lg:col-span-1 bg-blue-1200 p-4">
+        <div class="text-white text-xs font-bold">04</div>
+        <div class="text-xs text-sky-500 text-center font-medium mt-6">{{ 'details.package.platinum' | translate: {default: 'Platinum Package'} }}</div>
+        <div class="text-5xl text-white text-center font-light my-2">$2000</div>
+        <div class="text-sky-500 text-sm text-center font-medium my-4">2000 Shares</div>
+        <!--<button class="text-xs text-white bg-cyan-600 rounded py-3 px-14 mx-auto block uppercase my-7 font-bold">Purchase</button>-->
+      </div>
+    </div>
+  </div>
+  <!-- Team -->
+  <div class="mb-24 px-10 md:px-24">
+    <div class=" grid grid-cols-12 gap-4">
+      <div class="col-span-12 lg:col-span-4 mt-5">
+        <div class="text-gray-700 text-5xl font-light uppercase">{{ 'details.ourTeam' | translate: {default: 'Our Team'} }}</div>
+      </div>
+      <div class="col-span-12 lg:col-span-8">
+        <ng-container *ngFor="let image of assetData.companyDocument">
+          <img *ngIf="image.docType == 3" src="{{ image.docName }}" alt="{{ image.docTitle }}" class="w-32 h-32 inline m-5">
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <!-- Similar Investments -->
+  <div></div>
+  <!-- Contact form -->
+  <!--<div class="bg-contact bg-contain bg-right-bottom bg-no-repeat bg-about pt-48 pb-24 md:px-24 text-center">
+    <div class="text-sky-500 text-xl font-light">Got questions about this investment?</div>
+    <div class="text-blue-900 text-2xl md:text-5xl uppercase font-light mt-5">
+      We will be happy to answer<br/>All your questions
+    </div>
+    <div class="mt-10 w-5/6 mx-auto">
+      <form name="contact" method="post" (submit)="">
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="First Name" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+          <input type="text" placeholder="Last Name" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+          <input type="text" placeholder="Email Address" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+          <input type="text" placeholder="Phone" class="border-gray-200 border-1 text-sm col-span-1 py-2 px-4 rounded-sm"/>
+          <textarea placeholder="Message" class="border-gray-200 border-1 text-sm col-span-2 h-40 py-2 px-4 rounded-sm"></textarea>
+        </div>
+        <button class="text-xs text-white bg-blue-1200 font-bold mt-12 rounded py-3 px-8 sm:w-4/12 uppercase">Send us your message</button>
+      </form>
+    </div>
+  </div>-->
+</div>

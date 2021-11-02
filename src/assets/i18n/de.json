@@ -1,0 +1,264 @@
+{
+  "HOME": {
+    "TITLE": "Hallo Angular mit ngx-translate",
+    "TEXT": "Diese Demo wurde mit ngx-translate erstellt",
+    "SELECT": "Sprache auswählen"
+  },
+  "header": {
+    "home": "Heim",
+    "OurProperties": "Unsere Immobilien",
+    "pro": "Eigenschaften",
+    "property": {
+      "subMenu1": "Besorgen",
+      "subMenu2": "Miete",
+      "subMenu3": "Mieten",
+      "subMenu4": "Speisekarte",
+      "menu": {
+        "menu1": "Menü eins",
+        "menu2": "Menü Zwei",
+        "menu3": "Menü Drei"
+      }
+    },
+    "benefits": "Leistungen",
+    "about": "Über uns",
+    "howItWork": "Wie es funktioniert",
+    "contact": "Kontaktiere uns",
+    "setting": "Einstellung",
+    "settingMenu": {
+      "reset": "Passwort und E-Mail aktualisieren",
+      "question": "Fragebogen",
+      "document": "Dokumentation",
+      "kyc": "KYC"
+    },
+    "wallet": "Brieftasche",
+    "logout": "Ausloggen",
+    "login": "Anmeldung",
+    "signup": "Anmelden",
+    "prototype": "Diese Prototyp-Website befindet sich derzeit noch in Entwicklung."
+  },
+  "login": {
+    "title": "ANMELDUNG",
+    "form": {
+      "label": "Email",
+      "placeholder_email": "E-Mail-Addresse",
+      "password": "Passwort",
+      "placeholder_pass": "Passwort eingeben",
+      "button": "ANMELDEN"
+    },
+    "forgot_password": "Passwort vergessen?",
+    "account1": "Sie haben noch kein Konto?",
+    "account2": "Jetzt registrieren",
+    "account3": "Bereits registriert?",
+    "account4": "ANMELDUNG"
+  },
+  "register": {
+    "title": "ANMELDEN",
+    "form": {
+      "label": "Email",
+      "placeholder_email": "E-Mail-Addresse",
+      "password": "Passwort",
+      "placeholder_pass": "Passwort eingeben",
+      "confirm_password": "Kennwort bestätigen",
+      "placeholder_confirm": "Passwort wiederholen",
+      "invitation": "Einladungscode",
+      "button": "Registrieren"
+    },
+    "forgot_password": "Passwort vergessen?",
+    "account1": "Sie haben noch kein Konto?",
+    "account2": "Jetzt registrieren"
+  },
+  "footer": {
+    "about": "ÜBER MERA INVEST",
+    "about_description": "MERA INVEST, Ihre innovative Immobilienplattform. Investieren Sie digital in hochwertige Immobilienprojekte ohne die nachteiligen Barrieren des klassischen Investmentmarktes.",
+    "navi": "Navigation",
+    "navigation": {
+      "home": "Zuhause",
+      "buy": "Kaufen",
+      "rent": "Miete",
+      "property": "Eigenschaften",
+      "about": "Über uns",
+      "privacy": "Datenschutz-Bestimmungen",
+      "contact": "Kontaktiere uns",
+      "terms": "Bedingungen"
+    },
+    "follow_us": "FOLGE UNS",
+    "copyright": "Copyright © Alle Rechte vorbehalten | Blaue Porta, digitale Immobilien."
+  },
+  "reset_password": {
+    "header": "Sicherheit",
+    "title": "Passwort ändern",
+    "text": "Wählen Sie ein sicheres Passwort für hohe Sicherheit.",
+    "form": {
+      "old_password": "altes Kennwort",
+      "password": "Neues Kennwort",
+      "confirm_password": "Wiederhole das neue Passwort",
+      "button": "JETZT AKTUALISIEREN"
+    }
+  },
+  "reset_email": {
+    "title": "Ändern Sie die E-Mail",
+    "text": "Richten Sie eine neue E-Mail-Adresse ein.",
+    "form": {
+      "current_email": "Aktuelle E-Mail-Adresse",
+      "password": "derzeitiges Passwort",
+      "new_email": "neue Email Adresse",
+      "button": "JETZT AKTUALISIEREN"
+    }
+  },
+  "forgot_password": {
+    "title": "Passwort vergessen",
+    "form": {
+      "label": "Email",
+      "placeholder_email": "E-Mail-Addresse",
+      "button": "einreichen"
+    },
+    "account1": "Sie haben noch kein Konto?",
+    "account2": "Jetzt registrieren"
+  },
+  "reset": {
+    "title": "PASSWORT ZURÜCKSETZEN",
+    "form": {
+      "password": "Passwort",
+      "placeholder_pass": "Passwort eingeben",
+      "confirm_password": "Kennwort bestätigen",
+      "placeholder_confirm": "Passwort wiederholen",
+      "button": "Passwort zurücksetzen"
+    },
+    "account1": "Sie haben noch kein Konto?",
+    "account2": "Jetzt registrieren"
+  },
+  "home": {
+    "view": {
+      "label1": "Bereich",
+      "label2": "Preis psf",
+      "label3": "Mietrendite",
+      "label4": "Ziel zurückgeben",
+      "label5": "Min.Investition",
+      "label6": "INVESTORINNEN",
+      "button": "Eigenschaft anzeigen"
+    },
+    "trusted": "Vertrauenswürdiger Partner in",
+    "trustedDesc": "Investitionen in Luxus<br/>Anwesen in hervorragenden<br/>Standorten",
+    "portfolio": "Unser Portfolio",
+    "portfolioDesc": "Einzigartige Auswahl an Eigenschaften",
+    "promoTitle": "Auf der Suche nach etwas anderem?",
+    "promoDesc": "Fordern Sie unser maßgeschneidertes Investitionsangebot an",
+    "whyMera": {
+      "title": "Warum MERA INVEST",
+      "subtitle": "Von vertrauenswürdigen<br>Investment- und Immobilien<br>Spezialisten geführt",
+      "list1Title": "Vertrauenswürdige Investition<br>Unternehmen",
+      "list1Desc": "Millionen vertrauen MERA INVEST",
+      "list2Title": "Geringes Risiko, sichere<br>Investition",
+      "list2Desc": "Investition mit geringem Risiko in Immobilien",
+      "list3Title": "Hochprofitabel<br>Investition",
+      "list3Desc": "Erzielen Sie den höchsten ROI mit globalen Immobilieninvestitionen",
+      "list4Title": "Einfache Investition<br>Prozess",
+      "list4Desc": "In nur wenigen Schritten in globale Immobilien investieren leicht gemacht",
+      "list5Title": "Erstaunliche Eigenschaften<br>Standorte",
+      "list5Desc": "Kirsche wählte weltweit hochwertige Premium-Immobilien aus.",
+      "list6Title": "Beste Immobilien<br>auf dem Markt",
+      "list6Desc": "Anlagemöglichkeiten für die besten Immobilien auf dem Weltmarkt"
+    },
+    "founderQuote": "Bei MERA INVEST konzentrieren wir uns darauf,<br/>unseren Kunden eine einzigartige, kuratierte Auswahl<br/>der besten Immobilien auf dem Markt anzubieten",
+    "founderDesig": "Mitgründer & Direktor",
+    "adboxTitle": "Mit MERA INVEST",
+    "adboxDesc": "In Luxusimmobilien investieren",
+    "adboxSubhead": "Nie war es einfacher",
+    "howItWorks": {
+      "title": "Wie es funktioniert",
+      "subtitle": "Wir glauben, dass<br/>In Immobilien<br>Investitionen<br/>einfach sein können",
+      "desc": "Sie sind nur wenige Schritte von Ihrem Traumhaus oder Ihrer gewinnbringenden Investition entfernt.",
+      "step1": "Schritt 1",
+      "step1Title": "Registrieren Sie sich auf unserer Seite. Es dauert weniger als 5 Minuten!",
+      "step1Desc": "Einfache Registrierung",
+      "step2": "Step 2",
+      "step2Title": "Durchsuchen Sie unsere Datenbank und finden Sie Ihre Immobilie",
+      "step2Desc": "Ein großer Pool an Premium-Immobilien",
+      "step3": "Step 3",
+      "step3Title": "Über unsere Website in Immobilien investieren",
+      "step3Desc": "Investition in globale Immobilien von uns!"
+    },
+    "hero": {
+      "subtitle": "Neuester Investitionsvorschlag",
+      "title": "Meerblick<br/>Luxusvilla",
+      "desc": "15.000 SF, 20 Schlafzimmer-Anwesen<br/>mit Zugang zu einem fantastischen privaten<br/>Strand"
+    }
+  },
+  "details": {
+    "financialTile": "Gewinne & Dividenden",
+    "financialDesc": "Dividenden werden ausschließlich an alle Investoren in diesem Projekt ausgezahlt. Dividenden werden in INR direkt vom Emittenten an den Anleger ausgezahlt. Kein Zwischenhändler, keine Zwischenhändler.",
+    "dividend": "Dividenden",
+    "revenueRent": "Einnahmen aus Miete",
+    "revenueFees": "Einnahmen aus Gebühren",
+    "other": "Sonstiges",
+    "projectedProfit": "Prognostizierter monatlicher Gewinn",
+    "roadmapTitle": "Investitionsfahrplan",
+    "investmentboxTitle": "Machen Sie eine Investition",
+    "packageSel": "Wählen Sie ein Paket oder",
+    "packageOffer": "Personalisiertes Angebot anfordern",
+    "package": {
+      "copper": "Kupferpaket",
+      "silver": "Silberpaket",
+      "gold": "Goldpaket",
+      "platinum": "Platin-Paket"
+    },
+    "ourTeam": "Unser Team"
+  },
+  "wallet": {
+    "title": "BRIEFTASCHE",
+    "table": {
+      "title_primary": "Brieftasche - Primary",
+      "title_secondary": "Brieftasche - Sekundär",
+      "header_name": "Name",
+      "header_balance": "Balance",
+      "header_available": "Verfügbar",
+      "header_order": "Auf Bestellung",
+      "header_action": "Aktion",
+      "deposit_button": "Anzahlung",
+      "withdraw_button": "Abheben"
+    },
+    "deposit_modal": {
+      "title": "Anzahlung",
+      "text": "Wie möchten Sie Ihre Einzahlung tätigen?",
+      "button": "Ð-Währungskonto",
+      "form": {
+        "label": "Meine Kontonummer",
+        "notice": "Wichtiger Hinweis: Bitte kopieren Sie die Nachricht wie oben gezeigt in das Nachrichtenfeld der Einzahlungstransaktion und fügen Sie sie ein. Andernfalls verlieren Sie Ihr Geld!",
+        "message": "Botschaft"
+      }
+    },
+    "withdraw_modal": {
+      "title": "Abheben",
+      "text": "Wählen Sie unten Ihre Auszahlungsmethode aus.",
+      "button": "Ð-Währungskonto",
+      "form": {
+        "label": "Ð-Währungskonto-Adresse",
+        "message": "Botschaft ",
+        "amount": "Menge",
+        "button": "Abheben"
+      }
+    }
+  },
+  "purchase": {
+    "title": "Kauf",
+    "table": {
+      "title": "Luxuswohnungen in Indien",
+      "column_1": "Aktienbetrag",
+      "column_2": "Preis pro Aktie",
+      "column_3": "Anteile"
+    },
+    "form": {
+      "title": "WÄHRUNG WÄHLEN",
+      "available": "Verfügbares Guthaben",
+      "price": "Preis",
+      "size": "Menge",
+      "total": "geschätzter Gesamtwert",
+      "with": "Mit",
+      "fee": "Gebühr",
+      "button": "Zahlen"
+    }
+  },
+  "error": {
+    "invitationCode": "Bitte geben Sie einen gültigen Code ein"
+  }
+}
