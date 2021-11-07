@@ -28,6 +28,7 @@ export class HomeComponent implements OnInit {
   }
 
   public getPropertiesList() {
+    console.log(this._url.propertyListUrl);
     this._req.fetchApiData(this._url.propertyListUrl).subscribe(
       (data: any) => {
         let resSucc = data.data;
