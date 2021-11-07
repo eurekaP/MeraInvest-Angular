@@ -33,6 +33,7 @@ import { TranslationService } from "./services/translation/translation.service";
 import { TwoFactorService } from "./services/twoFactor/two-factor.service";
 import { LoginService } from "./services/login/login.service";
 import { LogoutService } from "./services/logout/logout.service";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { LogoutService } from "./services/logout/logout.service";
     ReactiveFormsModule,
     FormsModule,
     StoreModule.forRoot(batpReducers),
+    NgbModule,
   ],
   providers: [
     BatpConfig,

@@ -301,30 +301,72 @@
       <!-- Team -->
       <div class="col-span-1 md:col-span-12">
         <div class="grid grid-cols-2 md:grid-cols-12 gap-2 md:gap-6">
-          <!-- Team 1 -->
-          <div class="col-span-1 md:col-span-3">
-            <div class="text-center"><img src="https://cdn.filestackcontent.com/qHFkd6gzS1SFyFoGTuHq" alt="Andre Wels" class="mx-auto"></div>
-            <div class="text-center text-white md:text-xl font-bold">Andre Wels</div>
-            <div class="text-center text-sky-500 text-xs md:text-base">Director & Founder</div>
-          </div>
-          <!-- Team 1 -->
-          <div class="col-span-1 md:col-span-3">
-            <div class="text-center"><img src="https://cdn.filestackcontent.com/moB6WVSSSVyiOPbHGHsB" alt="Thande Moyane"  class="mx-auto"></div>
-            <div class="text-center text-white md:text-xl font-bold">Thande Moyane</div>
-            <div class="text-center text-sky-500 text-xs md:text-base">Chief of Marketing</div>
-          </div>
-          <!-- Team 1 -->
-          <div class="col-span-1 md:col-span-3">
-            <div class="text-center"><img src="/assets/images/teams/mera-05.png" alt="Suresh"  class="mx-auto" style="border-radius: 100px"></div>
-            <div class="text-center text-white md:text-xl font-bold">Suresh</div>
-            <div class="text-center text-sky-500 text-xs md:text-base">IT Developer (Laravel)</div>
-          </div>
-          <!-- Team 1 -->
-          <div class="col-span-1 md:col-span-3">
-            <div class="text-center"><img src="/assets/images/teams/mera-06.png" alt="Kartheeswaran"  class="mx-auto" style="border-radius: 100px"></div>
-            <div class="text-center text-white md:text-xl font-bold">Kartheeswaran</div>
-            <div class="text-center text-sky-500 text-xs md:text-base">IT Developer (Angular)</div>
-          </div>
+          <ngb-carousel [interval]="2500" [showNavigationIndicators]="false" class="md:col-span-12">
+            <ng-template  *ngFor='let in of counter(5) ;let i = index' ngbSlide >
+              <div class="picsum-img-wrapper grid grid-cols-1 md:grid-cols-12 md:gap-4">
+                <!-- Team 1 -->
+                <div class="col-span-1 md:col-span-3" *ngIf="i < 0 && 0 < i + 5">
+                  <div class="text-center"><img src="/assets/images/teams/mera-01.png" alt="Andre Wels" class="mx-auto h-48" style="border-radius: 100px"></div>
+                  <div class="text-center text-white md:text-xl font-bold">Andre Wels</div>
+                  <div class="text-center text-sky-500 text-xs md:text-base">Director & Founder</div>
+                </div>
+                <!-- Team 2 -->
+                <div class="col-span-1 md:col-span-3" *ngIf="i < 1 && 1 < i + 5">
+                  <div class="text-center"><img src="/assets/images/teams/mera-04.png" alt="Thande Moyane"  class="mx-auto h-48" style="border-radius: 100px"></div>
+                  <div class="text-center text-white md:text-xl font-bold">Thande Moyane</div>
+                  <div class="text-center text-sky-500 text-xs md:text-base">Chief of Marketing</div>
+                </div>
+                <!-- Team 3 -->
+                <div class="col-span-1 md:col-span-3" *ngIf="i < 2 && 2 < i + 5">
+                  <div class="text-center"><img src="/assets/images/teams/mera-07.jpg" alt="Lukas"  class="mx-auto h-48" style="border-radius: 100px"></div>
+                  <div class="text-center text-white md:text-xl font-bold">Lukas</div>
+                  <div class="text-center text-sky-500 text-xs md:text-base">Head of Operations</div>
+                </div>
+                <!-- Team 4 -->
+                <div class="col-span-1 md:col-span-3" *ngIf="i < 3 && 3 < i + 5">
+                  <div class="text-center"><img src="/assets/images/teams/mera-05.png" alt="Suresh"  class="mx-auto h-48" style="border-radius: 100px"></div>
+                  <div class="text-center text-white md:text-xl font-bold">Suresh</div>
+                  <div class="text-center text-sky-500 text-xs md:text-base">IT Developer (Laravel)</div>
+                </div>
+                <!-- Team 5 -->
+                <div class="col-span-1 md:col-span-3" *ngIf="i < 4 && 4 < i + 5">
+                  <div class="text-center"><img src="/assets/images/teams/mera-06.png" alt="Kartheeswaran"  class="mx-auto h-48" style="border-radius: 100px"></div>
+                  <div class="text-center text-white md:text-xl font-bold">Kartheeswaran</div>
+                  <div class="text-center text-sky-500 text-xs md:text-base">IT Developer (Angular)</div>
+                </div>
+                <!-- Team 1 -->
+                <div class="col-span-1 md:col-span-3" *ngIf="i < 5 && 5 < i + 5">
+                  <div class="text-center"><img src="/assets/images/teams/mera-01.png" alt="Andre Wels" class="mx-auto h-48" style="border-radius: 100px"></div>
+                  <div class="text-center text-white md:text-xl font-bold">Andre Wels</div>
+                  <div class="text-center text-sky-500 text-xs md:text-base">Director & Founder</div>
+                </div>
+                <!-- Team 2 -->
+                <div class="col-span-1 md:col-span-3" *ngIf="i < 6 && 6 < i + 5">
+                  <div class="text-center"><img src="/assets/images/teams/mera-04.png" alt="Thande Moyane"  class="mx-auto h-48" style="border-radius: 100px"></div>
+                  <div class="text-center text-white md:text-xl font-bold">Thande Moyane</div>
+                  <div class="text-center text-sky-500 text-xs md:text-base">Chief of Marketing</div>
+                </div>
+                <!-- Team 3 -->
+                <div class="col-span-1 md:col-span-3" *ngIf="i < 7 && 7 < i + 5">
+                  <div class="text-center"><img src="/assets/images/teams/mera-07.jpg" alt="Lukas"  class="mx-auto h-48" style="border-radius: 100px"></div>
+                  <div class="text-center text-white md:text-xl font-bold">Lukas</div>
+                  <div class="text-center text-sky-500 text-xs md:text-base">Head of Operations</div>
+                </div>
+                <!-- Team 4 -->
+                <div class="col-span-1 md:col-span-3" *ngIf="i < 8 && 8 < i + 5">
+                  <div class="text-center"><img src="/assets/images/teams/mera-05.png" alt="Suresh"  class="mx-auto h-48" style="border-radius: 100px"></div>
+                  <div class="text-center text-white md:text-xl font-bold">Suresh</div>
+                  <div class="text-center text-sky-500 text-xs md:text-base">IT Developer (Laravel)</div>
+                </div>
+                <!-- Team 5 -->
+                <div class="col-span-1 md:col-span-3" *ngIf="i < 9 && 9 < i + 5">
+                  <div class="text-center"><img src="/assets/images/teams/mera-06.png" alt="Kartheeswaran"  class="mx-auto h-48" style="border-radius: 100px"></div>
+                  <div class="text-center text-white md:text-xl font-bold">Kartheeswaran</div>
+                  <div class="text-center text-sky-500 text-xs md:text-base">IT Developer (Angular)</div>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-carousel>
           <div class="col-span-1"></div>
         </div>
       </div>
