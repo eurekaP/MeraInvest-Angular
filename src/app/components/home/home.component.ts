@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   public logOutLoader = false;
   public errorMessage = '';
 
-  public carouselPerPage = Math.round(window.innerWidth  / 400);
+  public carouselPerPage = Math.min(Math.round(window.innerWidth  / 400), 4);
 
   constructor(
     private _req: ApirequestService,
