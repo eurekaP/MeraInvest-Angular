@@ -17,6 +17,8 @@ export class HomeComponent implements OnInit {
   public logOutLoader = false;
   public errorMessage = '';
 
+  public carouselPerPage = Math.round(window.innerWidth  / 400);
+
   constructor(
     private _req: ApirequestService,
     private _url: ApiUrlService,
@@ -24,6 +26,8 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    console.log(window.innerWidth );
+    
     this.getPropertiesList();
   }
 
